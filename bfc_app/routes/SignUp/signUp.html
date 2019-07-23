@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Регистрация</title>
+
+    <link href="/css/signin.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <nav class="site-header fixed-top py-1">
+        <div class="container-menu d-flex">
+            <a class="py-2" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+            </a>
+            
+            <div id = 'tests' class="ml-3">
+            	<div class="row">
+            	<a class="nav-link" href="/testsPage">Тесты</a>
+            	</div>
+            </div>
+            
+            <div class="py-2 ml-auto">
+              <div class="row">
+                <div class="col">
+                  <div id='userName' class="row">
+                  </div>
+
+                  <div id='userSettings' class="row">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+           <!--  <a class="py-2 d-none d-md-inline-block" href="#">Войти</a> -->
+
+        </div>
+    </nav>
+    
+    <div class="container py-5">
+        <div class="py-5 text-center">
+            <h2>Регистрация</h2>
+        </div>
+
+        <div class="row-center">
+        <div class="col-md-6-center">
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="userName">Логин</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input id='name' type="text" class="form-control"  placeholder="логин" required>
+                        <div class="invalid-feedback" style="width: 100%;">Введите логин.</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email">E-mail</label>
+                    <input id='email' type="email" class="form-control" placeholder="you@example.com" required>
+                    <div class="invalid-feedback">Введите корректный e-mail.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password">Пароль</label>
+                    
+                    <input id='password' type="password" class="form-control" placeholder="пароль" required>
+                    <input onchange="if ($('#password').get(0).type=='password') $('#password').get(0).type='text'; else $('#password').get(0).type='password';" name="fff" type="checkbox" value="false"> Показать
+                    
+                    <div class="invalid-feedback">Введите пароль.</div>
+                </div>
+        
+                <button class="btn btn-primary mt-4 btn-lg btn-block " type="submit" onclick="add()">Зарегистрироваться</button>
+            </form>
+        </div>
+        </div>
+
+    
+    </div>
+    <!-- 
+<footer class="footer-bg text-center">
+        <p class="text-muted">&copy;  2019 VMK</p>
+    </footer>
+ -->
+</body>
+	
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="/js/signUp.js"></script>
+</html>
+
